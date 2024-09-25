@@ -5,7 +5,7 @@ type CardProps = {
   
   export default function Card({ className, children }: CardProps) {
   
-    const style = className + " rounded-md bg-[#D9A16D]";
+    const style = className + " rounded-md";
   
     return (
       <div className={style}>{children}</div>
