@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Kiwi_Maru } from '@next/font/google';
+import { Kiwi_Maru } from "next/font/google";
 
 const kiwiMaru = Kiwi_Maru({
   weight: ['300', '400', '500'],
