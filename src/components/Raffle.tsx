@@ -24,7 +24,7 @@ export default function Raffle() {
 
     return (
         <>
-            <Card className="bg-khaki grid grid-cols-5 md:grid-cols-10 w-5/6 h-fit md:w-fit place-items-center gap-5 p-4">
+            <Card className="bg-khaki grid grid-cols-5 lg:grid-cols-10 w-5/6 h-fit lg:w-fit place-items-center gap-5 p-4">
                 {tickets}
             </Card>
         </>
