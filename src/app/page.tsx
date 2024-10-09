@@ -56,7 +56,13 @@ export default function Home() {
         
         <Raffle />
 
-        <h2 className="text-navy-blue text-lg font-medium mt-4">X pontos escolhidos - Realizar o pagamento</h2>
-    </Card>
+        <div className="mt-6 flex flex-col gap-4">
+            <h2 className="text-navy-blue text-lg font-medium">X pontos escolhidos </h2>
+            <button className="bg-green text-cream p-2 rounded-md active:translate-y-1">
+                Realizar Pagamento
+            </button>
+        </div>
+
+    </Card>    
   );
 }
