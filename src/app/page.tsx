@@ -3,14 +3,14 @@
 import Card from "@/components/Card";
 import Raffle from "@/components/Raffle";
 import Info from "@/components/Info";
-import { remainingTime } from '../utils/RemainingTime';
+import { remainingTime, Countdown } from '../utils/RemainingTime';
 import { useEffect, useState } from "react";
 
 export default function Home() {
 
-  const initialTimeLeft: any = remainingTime('2025-05-31');
+  const initialTimeLeft: Countdown = { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
-  const [timeLeft, setTimeLeft] = useState(remainingTime(initialTimeLeft));
+  const [timeLeft, setTimeLeft] = useState<Countdown>(initialTimeLeft);
 
   useEffect(() => {
       const intervalId = setInterval(() => {

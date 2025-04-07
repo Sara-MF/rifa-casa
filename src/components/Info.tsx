@@ -8,7 +8,7 @@ type InfoProps = {
   
 export default function Info({ title, subtitle, children, className }: InfoProps) {
 
-  let style: string = "w-full rounded-md bg-cream border-dashed border-2 border-light-orange p-4 shadow-md flex flex-col " + className;
+  const style: string = "w-full rounded-md bg-cream border-dashed border-2 border-light-orange p-4 shadow-md flex flex-col " + className;
 
   return (
     <div className={style}>
